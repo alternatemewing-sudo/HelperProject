@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Math-solver</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Math-solver</h1>
+      <p class="tagline">Safe potato link encoder • panic = 0</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Create a Math-solver potato link</h2>
+        <form id="createForm">
+          <input id="urlInput" name="url" placeholder="Paste a URL (https://...)" required />
+          <div class="row">
+            <button type="submit">Make potato</button>
+            <button id="copyBtn" type="button">Copy result</button>
+          </div>
+        </form>
+
+        <div id="result" class="result hidden">
+          <label>Potato link:</label>
+          <input id="resultInput" readonly />
+          <p class="small">Press <strong>0</strong> at any time to panic to example.com</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Home</h3>
+        <p>Use Math-solver to create an encoded link. The link will redirect the browser to the real site when opened.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>All mentions of the word potato are deliberate. This app redirects — it does not fetch remote site content.</small>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
